@@ -256,7 +256,7 @@ export const og: SocialImageOptions["Component"] = (
   })
 
   const Li = [created, reading]
-{% raw %}
+
   return (
     <div
       style={{
