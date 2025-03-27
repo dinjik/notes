@@ -26,8 +26,8 @@ section {
   border-radius: 5px;
 }
 ::selection {
-  background: color-mix(in srgb, var(--tertiary) 60%, rgba(255, 255, 255, 0));
-  color: var(--darkgray);
+  background: #fffba0;
+  color: #131418;
 }
 
 p,
@@ -73,10 +73,11 @@ a {
   font-weight: $semiBoldWeight;
   text-decoration: none;
   transition: color 0.2s ease;
-  color: var(--secondary);
+  color: #000000; // Dark blue for light mode links
 
   &:hover {
-    color: var(--tertiary) !important;
+    font-weight: bold;
+    color: #ffffff; // White when hovered (default for light mode)
   }
 
   &.internal {
