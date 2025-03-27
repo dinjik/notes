@@ -17,7 +17,7 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "dinjik.github.io/notes",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    ignorePatterns: ["private", "templates", ".obsidian", "README.md"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
