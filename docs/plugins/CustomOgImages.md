@@ -256,7 +256,7 @@ export const og: SocialImageOptions["Component"] = (
   })
 
   const Li = [created, reading]
-
+{% raw %}
   return (
     <div
       style={{
@@ -266,7 +266,7 @@ export const og: SocialImageOptions["Component"] = (
         alignItems: "flex-start",
         height: "100%",
         width: "100%",
-        backgroundImage: `{% raw %}url("https://${cfg.baseUrl}/static/og-image.jpeg"){% endraw %}`,
+        backgroundImage: `url("https://${cfg.baseUrl}/static/og-image.jpeg")`,
         backgroundSize: "100% 100%",
       }}
     >
