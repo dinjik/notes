@@ -1,6 +1,8 @@
 ---
-title: Welcome to Quartz
+title: Welcome
+layout: default
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+# Welcome to My Site
+
+This is the homepage content.
