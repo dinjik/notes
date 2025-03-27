@@ -3,7 +3,6 @@ import * as Plugin from "./quartz/plugins"
 
 /**
  * Quartz 4 Configuration
- *
  */
 const config: QuartzConfig = {
   configuration: {
