@@ -15,7 +15,7 @@
     .sidebar.left:has(.explorer) {
       box-sizing: border-box;
       position: sticky;
-      background-color: #ffffff;
+      background-color: var(--light);
       padding: 1rem 0 1rem 0;
       margin: 0;
     }

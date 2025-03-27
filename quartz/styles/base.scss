@@ -21,13 +21,13 @@ section {
 }
 
 .text-highlight {
-  background-color: var(--textHighlight);
+  background-color: #fffba0;
   padding: 0 0.1rem;
   border-radius: 5px;
 }
 ::selection {
   background: #fffba0;
-  color: #131418;
+  color: #000;
 }
 
 p,
@@ -73,11 +73,10 @@ a {
   font-weight: $semiBoldWeight;
   text-decoration: none;
   transition: color 0.2s ease;
-  color: #000000; // Dark blue for light mode links
+  color: var(--secondary);
 
   &:hover {
-    font-weight: bold;
-    color: #ffffff; // White when hovered (default for light mode)
+    color: var(--tertiary) !important;
   }
 
   &.internal {

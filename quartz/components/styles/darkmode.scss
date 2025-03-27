@@ -21,43 +21,27 @@
 }
 
 :root[saved-theme="dark"] {
-  color: #ffffff; // Light gray for dark mode links (non-hover state)
-  text-decoration-color: #ffffff;
-
-
-  /* Set default text color to white */
-  --text-color: #ffffff;
-  --link-color: #cfcfcf;
-
-  /* Apply background color for dark mode */
-  --background-color: #131418;
+  color-scheme: dark;
 }
 
-:root[saved-theme="dark"] body {
-  color: var(--text-color); /* Override text color for dark mode */
-  background-color: #131418;
+:root[saved-theme="light"] {
+  color-scheme: light;
 }
 
-:root[saved-theme="dark"] a {
-  color: var(--link-color); /* Adjust link color */
-  text-decoration-color: var(--link-color);
+:root[saved-theme="dark"] .darkmode {
+  & > .dayIcon {
+    display: none;
+  }
+  & > .nightIcon {
+    display: inline;
+  }
 }
 
-:root[saved-theme="dark"] h1,
-:root[saved-theme="dark"] h2,
-:root[saved-theme="dark"] h3,
-:root[saved-theme="dark"] h4,
-:root[saved-theme="dark"] h5,
-:root[saved-theme="dark"] h6 {
-  color: var(--text-color); /* Headings also match dark mode text color */
-}
-
-:root[saved-theme="dark"] blockquote {
-  color: #d4d4d4; /* Slightly lighter color for blockquote text */
-  border-top: 1px solid #cfcfcf;
-  border-bottom: 1px solid #cfcfcf;
-}
-
-:root[saved-theme="dark"] .page-title {
-  color: var(--text-color); /* Make the page title white */
+:root .darkmode {
+  & > .dayIcon {
+    display: inline;
+  }
+  & > .nightIcon {
+    display: none;
+  }
 }
