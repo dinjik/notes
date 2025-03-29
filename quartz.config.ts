@@ -37,7 +37,7 @@ const config: QuartzConfig = {
         darkMode: {
           light: "#131418",
           lightgray: "#393639", // search bar etc
-          gray: "#fffba0",
+          gray: "#b8b8b8",
           darkgray: "#c7bebe",
           dark: "#ebebec",
           secondary: "#fff",
@@ -82,7 +82,7 @@ const config: QuartzConfig = {
       Plugin.Assets(),
       Plugin.Static(),
       Plugin.NotFoundPage(),
-      // Comment out CustomOgImages to speed up build times. why
+      // Comment out CustomOgImages to speed up build times.
       // Plugin.CustomOgImages(),
     ],
   },
