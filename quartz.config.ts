@@ -36,13 +36,13 @@ const config: QuartzConfig = {
         },
         darkMode: {
           light: "#131418",
-          lightgray: "#393639",
+          lightgray: "#393639", // search bar etc
           gray: "#b8b8b8",
           darkgray: "#c7bebe",
           dark: "#ebebec",
           secondary: "#fff",
           tertiary: "#fff",
-          highlight: "#fffba0",
+          highlight: "##b8b8b8",
           textHighlight: "#fffba0",
         },
       },
