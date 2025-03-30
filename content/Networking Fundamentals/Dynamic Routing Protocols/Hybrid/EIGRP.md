@@ -11,3 +11,4 @@ EIGRP maintains routing tables and sends updates only when there's a change in t
 3. **Update and Acknowledgment Packets:** EIGRP sends update packets to share new routing information, while acknowledgment packets confirm the receipt of updates.
 
 4. **Reliable Transport Protocol (RTP):** EIGRP uses RTP to guarantee the reliable delivery of routing updates. It ensures that all packets reach their destination, even if there are network issues.
+

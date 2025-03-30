@@ -53,14 +53,28 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
         return (
           <li class="section-li">
             <div class="section">
-              {/* Ensure proper spacing and alignment */}
+              <p class="meta">
+                {page.dates && <Date date={getDate(cfg, page)!} locale={cfg.locale} />}
+              </p>
               <div class="desc">
-                <h3 class="page-title">
+                <h3>
                   <a href={resolveRelative(fileData.slug!, page.slug!)} class="internal">
                     {title}
                   </a>
                 </h3>
               </div>
+              <ul class="tags">
+                {tags.map((tag) => (
+                  <li>
+                    <a
+                      class="internal tag-link"
+                      href={resolveRelative(fileData.slug!, `tags/${tag}` as FullSlug)}
+                    >
+                      {tag}
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </div>
           </li>
         )
@@ -70,32 +84,11 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
 }
 
 PageList.css = `
-.section-ul {
-  list-style: none;
-  padding: 0;
+.section h3 {
   margin: 0;
 }
 
-.section-li {
-  margin-bottom: 1rem; /* Add spacing between list items */
-}
-
-.section {
-  display: flex;
-  flex-direction: column; /* Ensure proper alignment */
-}
-
-.page-title {
+.section > .tags {
   margin: 0;
-  font-size: 1rem; /* Adjust font size if needed */
-}
-
-.internal {
-  text-decoration: none;
-  color: inherit;
-}
-
-.internal:hover {
-  text-decoration: underline;
 }
 `

@@ -7,5 +7,7 @@ VXLAN (Virtual Extensible LAN) is a network virtualization technology that exten
 **How It Works:**
 
 - **Encapsulation:** VXLAN encapsulates Layer 2 Ethernet frames inside UDP VXLAN packets, enabling them to traverse Layer 3 networks.(port 4789 by default)
+
 - **VTEPs (VXLAN Tunnel Endpoints):** These devices perform the encapsulation and decapsulation, acting as the endpoints for VXLAN tunnels.
+
 - **VXLAN Network Identifier (VNI):** A 24-bit identifier that provides up to 16,777,215 unique virtual networks, compared to VLAN’s 4,096 limit.
