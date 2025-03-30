@@ -1,13 +1,12 @@
-import { pathToRoot } from "../util/path"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
-import { i18n } from "../i18n"
 
-const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzComponentProps) => {
-  const title = "home"; // Title is now set to "Home"
+const PageTitle: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
   return (
     <h2 class={classNames(displayClass, "page-title")}>
-      <a href="https://dinjik.tech">{title}</a> {/* Update the href here if needed */}
+      <a href="https://dinjik.tech">
+        <img src="/static/dinjik.png" alt="dinjik" class="page-title-logo" />
+      </a>
     </h2>
   );
 };
@@ -17,6 +16,11 @@ PageTitle.css = `
   font-size: 1.75rem;
   margin: 0;
   font-family: var(--titleFont);
+}
+
+.page-title-logo {
+  max-height: 2rem; /* Adjust the size of the logo */
+  vertical-align: middle;
 }
 `
 
