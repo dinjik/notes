@@ -5,7 +5,10 @@ layout: default
 
 This is a personal collection of quick notes on networking, cybersecurity, and CTFs. It’s a place to keep things organized and accessible for future reference. Keep in mind, I always try my best to improve these notes with better formatting and clearer explanations.
 
-This site is mainly for my own use, but if you find something useful, feel free to use it. If you have a question or something to share, feel free to reach out on Discord: **dinjik**
+This site is mainly for my own use, but if you find something useful, feel free to use it. 
+
+
+If you have a question or something to share, feel free to reach out on Discord: **dinjik**
 
 ## Categories
 - [Networking Fundamentals](https://notes.dinjik.tech/Networking-Fundamentals/) – Protocols, routing, and fundamentals.

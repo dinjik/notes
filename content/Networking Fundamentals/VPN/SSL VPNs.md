@@ -1,6 +1,0 @@
-SSL VPNs operate at the **application layer** and use **SSL (Secure Sockets Layer)** or **TLS (Transport Layer Security)** protocols to encrypt traffic. These encryption protocols are the same ones used for secure web browsing (HTTPS), making SSL VPNs both reliable and easy to implement. They are particularly popular for remote access solutions since they require minimal configuration and can be accessed directly via a **web browser**.
-
-**Types of SSL VPNs**:
-
-- **Clientless SSL VPN**: This type doesn’t require any software installation on the user’s device. Users can simply open a web browser, navigate to a login page, and securely access the private network using HTTPS. This makes it particularly useful for providing **quick and temporary access** to users who only need to access web-based applications, check emails, or perform other basic tasks remotely.
-- **SSL VPN Client**: This version requires users to install a VPN client on their device. The client establishes a secure encrypted tunnel to the VPN server, allowing **broader network access**. It’s more suitable for users who need extensive access to company resources or for situations where consistent, secure connections are required, such as remote workers or contractors.
